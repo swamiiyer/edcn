@@ -1,0 +1,54 @@
+// Experimental parameters for simulation of continuous games.
+{
+    // Name of the payoff function.
+    payoff : null, 
+
+    // Parameter values for the payoff function.
+    payoff_params : null, 
+
+    // Selection strength.
+    selection_strength : 0.0, 
+
+    // Total number of players.
+    population : 0, 
+        
+    // Number of generations
+    generations : 0,
+
+    // Frequency (in generations) at which results will be saved
+    report_freq : 0, 
+
+    // Initial trait for each player.
+    init_trait : 0.0, 
+
+    // Maximum value that the trait of any player can attain.
+    max_trait : 0.0, 
+
+    // The probability with which a player interacts with another player 
+    // having the same trait as itself. This setting is relevant only for 
+    // complete networks.
+    assortativity : 0.0, 
+
+    // group specifies the number of neighbors each player 
+    // interacts with during each round of interactions. If 0, each 
+    // player will interact with its entire neighborhood. The average of 
+    // the neighbors' traits is used in calculating the payoff. Note 
+    // that this setting is not applicable in "FE2" and "RE2" dynamics,  
+    // and must be set to 1 if "assortativity" is positive.
+    group : 0, 
+
+    // Update rule ("RE1", "RE2", "FE1", "FE2", "IM", "BD", "DB").
+    update_rule : null, 
+
+    // Rate at which Gaussian mutations of traits are carried out.
+    mutation : 0.0, 
+
+    // Standard deviation for the Gaussian mutations.
+    stddev : 0.0,  
+
+    // Network topology ("Complete", "GraphML_File")
+    network_topology : null, 
+
+    // Filename if network topology is "GraphML_File"
+    graphml_file : null
+}

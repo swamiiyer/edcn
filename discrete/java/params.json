@@ -1,0 +1,38 @@
+// Experimental parameters for simulation of discrete 2x2 games.
+{
+    // A 2x2 payoff matrix.
+    payoff : null, 
+    
+    // Selection strength.
+    selection_strength : 0.0, 
+
+    // Total number of players.
+    population : 0, 
+        
+    // Initial fraction of population playing the cooperative trait C.
+    init_cooperators : 0.0,
+
+    // Number of generations
+    generations : 0,
+
+    // Frequency (in generations) at which results will be saved
+    report_freq : 0, 
+
+    // Number of trials.
+    trials : 0, 
+
+    // The probability with which a player interacts with another player 
+    // having the same trait as itself. This setting is relevant only for 
+    // complete networks.
+    assortativity : 0.0, 
+
+    // Update rule ("RE1", "RE2", "FE1", "FE2", 
+    // "IM", "BD", "DB").
+    update_rule : null, 
+
+    // Network topology ("Complete", "GraphML_File")
+    network_topology : null, 
+
+    // Filename if network topology is "GraphML_File"
+    graphml_file : null
+}

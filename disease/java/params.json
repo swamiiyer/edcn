@@ -1,0 +1,39 @@
+// Experimental parameters for simulation of virus dynamics.
+{
+    // Total number of players.
+    population : 0, 
+        
+    // Number of generations.
+    generations : 0,
+
+    // Frequency (in generations) at which results will be saved.
+    report_freq : 0, 
+
+    // Infection probability for the starting infected individual. 
+    // This may vary for different individuals in the infected state.
+    infection : 0.0,
+
+    // Virulence level c of a pathogen is calculated from its infection
+    // probability as c = pow(infection / b, 1.0 / a).
+    b : 0.0, 
+    a : 0.0, 
+
+    // Recovery probability.
+    recovery : 0.0,        
+
+    // Natural death probability.
+    death : 0.0,
+
+    // Rate at which Gaussian mutations of infection probability is 
+    // carried out.
+    mutation : 0.0, 
+
+    // Standard deviation for the Gaussian mutations.
+    stddev : 0.0,  
+
+    // Network topology ("Complete", "GraphML_File").
+    network_topology : null, 
+
+    // Filename if network topology is "GraphML_File".
+    graphml_file : null
+}
